@@ -1,0 +1,5 @@
+test:
+  adapter: mysql2
+  database: mysql2-foreign_key_constraints_test
+  username: root
+  password:
