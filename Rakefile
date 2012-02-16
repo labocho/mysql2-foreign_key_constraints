@@ -12,13 +12,15 @@ end
 require 'rake'
 
 require 'jeweler'
+require File.expand_path "#{File.dirname(__FILE__)}/lib/foreign_key_constraints/version"
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "mysql2-foreign_key_constraints"
+  gem.version = Mysql2::ForeignKeyConstraints::Version::STRING
   gem.homepage = "http://github.com/labocho/mysql2-foreign_key_constraints"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Add foreign key constraints helper methods to ActiveRecord migration for mysql2 adapter.}
+  gem.description = %Q{Add foreign key constraints helper methods to ActiveRecord migration for mysql2 adapter.}
   gem.email = "labocho@penguinlab.jp"
   gem.authors = ["labocho"]
   # dependencies defined in Gemfile
